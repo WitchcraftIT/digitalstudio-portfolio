@@ -1,0 +1,21 @@
+.works{padding-inline:max(3.5vw,24px)}
+.work-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:21px;align-items:start;min-width:0;overflow:visible}
+.work-card{min-width:0;min-height:0;display:flex;flex-direction:column;overflow:visible}
+.work-card-link{display:block;width:100%;min-width:0;color:inherit;text-decoration:none}
+.work-card-large{grid-row:auto}
+.portfolio-visual{width:100%;aspect-ratio:1893 / 911;overflow:hidden;background:#08070b;min-width:0}
+.portfolio-visual img{display:block;width:100%;height:100%;object-fit:contain;object-position:center;overflow:hidden}
+.work-card-large .portfolio-visual,.work-card:not(.work-card-large) .portfolio-visual,.work-card:nth-child(3) .portfolio-visual{aspect-ratio:1893 / 911}
+.work-card:nth-child(3){margin-top:0}
+.work-meta{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:start;gap:16px;padding:20px 0 0;min-width:0}
+.work-meta h3{min-width:0;margin:0;color:#f5f5f7;font:600 21px/1.2 var(--body);letter-spacing:-.02em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.work-meta p{margin:8px 0 0;color:#858ba3;font:400 14px/1.35 var(--body)}
+.work-meta>span{padding-top:3px;color:#858ba3;font:400 12px/1 var(--body);text-align:right}
+.work-card:nth-child(2) .work-meta{padding-top:16px;min-height:126px}
+.work-card:nth-child(2) .work-meta h3{font-size:20px}
+.work-card:nth-child(3){grid-column:2}
+.work-card:nth-child(3) .portfolio-visual{aspect-ratio:430 / 430}
+.work-card:nth-child(3) .work-meta{padding-top:16px}
+.replace-note{grid-column:1/-1;margin-top:44px}
+@media(max-width:1199px){.work-grid{grid-template-columns:minmax(0,1.12fr) minmax(0,1fr);gap:22px}.work-meta h3{font-size:19px}.work-meta p{font-size:13px}}
+@media(max-width:767px){.work-grid{grid-template-columns:minmax(0,1fr);gap:42px;overflow:visible}.work-card:nth-child(3){grid-column:auto;margin-top:0}.portfolio-visual,.work-card-large .portfolio-visual,.work-card:not(.work-card-large) .portfolio-visual,.work-card:nth-child(3) .portfolio-visual{aspect-ratio:1893 / 911}.work-meta,.work-card:nth-child(2) .work-meta,.work-card:nth-child(3) .work-meta{padding-top:16px;min-height:0}.work-meta h3,.work-card:nth-child(2) .work-meta h3{font-size:18px;white-space:normal}.work-meta p{font-size:13px}.replace-note{grid-column:auto;margin-top:0}}

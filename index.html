@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#08070b">
+  <meta name="description" content="Digital studio — сайты, интерфейсы и автоматизация для бизнеса.">
+  <title>Digital studio — design, code, motion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="portfolio.css">
+  <link rel="stylesheet" href="minimal.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="header">
+    <a class="brand" href="#top" aria-label="Digital studio — на главную">
+      <span class="brand-mark">•</span>
+      <span>Digital studio</span>
+    </a>
+    <nav class="nav" aria-label="Основная навигация">
+      <a href="#about">Обо мне</a>
+      <a href="#works">Работы</a>
+      <a href="#services">Услуги</a>
+      <a href="#process">Процесс</a>
+    </nav>
+    <div class="lang-switch" role="group" aria-label="Выбор языка">
+      <button class="lang active" type="button" data-lang="ru">RU</button><span>/</span><button class="lang" type="button" data-lang="en">EN</button>
+    </div>
+    <a class="header-cta" href="#order">Обсудить проект</a>
+    <button class="menu-button" type="button" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <img class="hero-art" src="assets/hero-art.png" alt="Абстрактная фиолетовая 3D-форма">
+      <div class="hero-vignette"></div>
+      <div class="orbit orbit-one"></div>
+      <div class="orbit orbit-two"></div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Независимая digital-студия</p>
+        <h1>DIGITAL<span>STUDIO</span></h1>
+        <p class="hero-lead">Превращаю идеи в быстрые сайты,<br>которые работают на <em>бизнес-результат.</em></p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#order">Заказать проект</a>
+          <a class="text-link" href="#works">Смотреть работы</a>
+        </div>
+      </div>
+      <p class="hero-side hero-side-left">DESIGN • CODE • MOTION</p>
+      <p class="hero-side hero-side-right">AVAILABLE FOR PROJECTS · 2026</p>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="about-media reveal">
+        <img src="assets/about-photo.png" alt="Разработчик за работой у окна с видом на ночной город">
+        <span class="about-media-label">DESIGN · CODE · FOCUS</span>
+      </div>
+      <div class="about-copy reveal">
+        <p class="kicker">01 / Обо мне</p>
+        <h2>Разрабатываю<br><span>цифровые продукты</span></h2>
+        <p class="about-lead">Меня зовут Дмитрий. Я IT-разработчик с опытом около трёх лет. Проектирую и собираю сайты, интерфейсы и автоматизацию — от первой идеи до рабочего результата.</p>
+        <div class="about-facts">
+          <div><strong>3+</strong><span>года в разработке</span></div>
+          <div><strong>50+</strong><span>задач и прототипов</span></div>
+          <div><strong>1 : 1</strong><span>внимание к задаче</span></div>
+        </div>
+        <div class="about-tags"><span>Frontend</span><span>UI / UX</span><span>Automation</span></div>
+      </div>
+    </section>
+
+    <section class="marquee" aria-label="Услуги">
+      <div class="marquee-track">
+        <span>LANDING PAGES</span><i>✦</i><span>WEB APPS</span><i>✦</i><span>AI AUTOMATION</span><i>✦</i><span>UI / UX</span><i>✦</i>
+        <span>LANDING PAGES</span><i>✦</i><span>WEB APPS</span><i>✦</i><span>AI AUTOMATION</span><i>✦</i><span>UI / UX</span><i>✦</i>
+      </div>
+    </section>
+
+    <section class="section works" id="works">
+      <div class="section-heading reveal">
+        <div><p class="kicker">02 / Избранное</p><h2>Работы, которыми<br><span>я горжусь</span></h2></div>
+        <p class="section-note">Каждый проект — своя задача, характер и аккуратно собранная логика.</p>
+      </div>
+      <div class="filters reveal" role="group" aria-label="Фильтр работ">
+        <button class="filter active" data-filter="all">Все</button>
+        <button class="filter" data-filter="web">Сайты</button>
+        <button class="filter" data-filter="ui">Интерфейсы</button>
+        <button class="filter" data-filter="ai">AI</button>
+      </div>
+      <div class="work-grid">
+        <article class="work-card work-card-large reveal" data-category="web">
+          <a class="work-card-link" href="https://witchcraftit.github.io/premium-renovation-github-pages/" target="_blank" rel="noopener noreferrer">
+            <div class="portfolio-visual"><img src="assets/portfolio-premium-final.png" alt="Лендинг премиального ремонта квартир и домов"></div>
+            <div class="work-meta"><div><h3>Premium / Interior</h3><p>Лендинг · Дизайн · Разработка</p></div><span>01</span></div>
+          </a>
+        </article>
+        <article class="work-card reveal" data-category="ui">
+          <a class="work-card-link" href="https://witchcraftit.github.io/forest-landing/" target="_blank" rel="noopener noreferrer">
+            <div class="portfolio-visual"><img src="assets/portfolio-forest-final.png" alt="Лендинг загородных домов"></div>
+            <div class="work-meta"><div><h3>Лесная линия / Architecture</h3><p>Мобильный лендинг · UI/UX</p></div><span>02</span></div>
+          </a>
+        </article>
+        <article class="work-card reveal" data-category="ai">
+          <a class="work-card-link" href="https://witchcraftit.github.io/blackline-auto-github-pages/" target="_blank" rel="noopener noreferrer">
+            <div class="portfolio-visual"><img src="assets/portfolio-blackline-final.png" alt="Лендинг премиального автосервиса Blackline"></div>
+            <div class="work-meta"><div><h3>Blackline / Auto service</h3><p>Лендинг · UI/UX · Разработка</p></div><span>03</span></div>
+          </a>
+        </article>
+      </div>
+      <p class="replace-note reveal">Ваши скриншоты легко поставить вместо этих демо-примеров.</p>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="section-heading reveal">
+        <div><p class="kicker">03 / Возможности</p><h2>Что могу<br><span>создать</span></h2></div>
+        <p class="section-note">От первого экрана до готового продукта — быстро, прозрачно и без агентской бюрократии.</p>
+      </div>
+      <div class="service-list">
+        <article class="service reveal"><span class="service-number">01</span><h3>Лендинг</h3><p>Сильная подача продукта, адаптив и анимации для запуска рекламы.</p></article>
+        <article class="service reveal"><span class="service-number">02</span><h3>Сайт под ключ</h3><p>Структура, дизайн и разработка многостраничного сайта.</p></article>
+        <article class="service reveal"><span class="service-number">03</span><h3>UI / UX</h3><p>Интерфейсы сервисов, личных кабинетов и мобильных приложений.</p></article>
+        <article class="service reveal"><span class="service-number">04</span><h3>AI + автоматизация</h3><p>Умные формы, боты и интеграции, которые экономят время.</p></article>
+      </div>
+    </section>
+
+    <section class="section process" id="process">
+      <div class="process-intro reveal"><p class="kicker">04 / Как работаю</p><h2>Понятный путь<br>от «хочу» до <span>«готово»</span></h2></div>
+      <div class="steps">
+        <article class="step reveal"><span>01</span><div><h3>Знакомство</h3><p>Обсуждаем задачу, аудиторию, сроки и референсы.</p></div></article>
+        <article class="step reveal"><span>02</span><div><h3>Концепт</h3><p>Собираю структуру и визуальное направление проекта.</p></div></article>
+        <article class="step reveal"><span>03</span><div><h3>Создание</h3><p>Делаю дизайн, код, адаптивы и нужные интеграции.</p></div></article>
+        <article class="step reveal"><span>04</span><div><h3>Запуск</h3><p>Тестируем, публикуем и остаёмся на связи после релиза.</p></div></article>
+      </div>
+    </section>
+
+    <section class="section order" id="order">
+      <div class="order-copy reveal"><p class="kicker">05 / Новый проект</p><h2>Есть задача?<br><span>Давайте обсудим.</span></h2><p>Ответьте на несколько вопросов — я сформирую заявку и свяжусь с вами для уточнения деталей.</p><div class="availability"><i></i> Сейчас беру новые проекты</div></div>
+      <form class="order-form reveal" id="orderForm">
+        <label>Как вас зовут?<input type="text" name="name" placeholder="Ваше имя" required></label>
+        <label>Как с вами связаться?<input type="text" name="contact" placeholder="Telegram / Email" required></label>
+        <fieldset><legend>Что нужно сделать?</legend><div class="choices"><label><input type="radio" name="service" value="Лендинг" checked><span>Лендинг</span></label><label><input type="radio" name="service" value="Сайт под ключ"><span>Сайт под ключ</span></label><label><input type="radio" name="service" value="UI / UX"><span>UI / UX</span></label><label><input type="radio" name="service" value="AI / автоматизация"><span>AI / автоматизация</span></label></div></fieldset>
+        <label>Пара слов о задаче<textarea name="message" rows="3" placeholder="Что за проект и какой результат нужен?"></textarea></label>
+        <button class="button button-primary submit" type="submit">Отправить в Telegram</button>
+        <p class="form-hint">Откроется чат с @DIGITALSTUDIOIT и готовым текстом заявки.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand" href="#top"><span class="brand-mark">•</span><span>Digital studio</span></a>
+    <div class="footer-links"><a href="https://t.me/DIGITALSTUDIOIT" target="_blank" rel="noopener">Telegram</a><a href="mailto:hello@yourdomain.com">Email</a></div>
+    <span>© 2026</span>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite"><strong>Открываю Telegram</strong><span>Текст заявки уже подготовлен.</span></div>
+  <script src="script.js"></script>
+</body>
+</html>
