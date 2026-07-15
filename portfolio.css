@@ -22,3 +22,11 @@
 .work-card:nth-child(4){grid-column:1;grid-row:2;margin-top:0}
 @media(max-width:1199px){.work-grid{grid-template-columns:minmax(0,1.12fr) minmax(0,1fr);gap:22px}.work-meta h3{font-size:19px}.work-meta p{font-size:13px}}
 @media(max-width:767px){.work-grid{grid-template-columns:minmax(0,1fr);gap:42px;overflow:visible}.work-card:nth-child(3),.work-card:nth-child(4){grid-column:auto;grid-row:auto;margin-top:0}.portfolio-visual,.work-card-large .portfolio-visual,.work-card:not(.work-card-large) .portfolio-visual,.work-card:nth-child(3) .portfolio-visual{aspect-ratio:1893 / 911}.work-meta,.work-card:nth-child(2) .work-meta,.work-card:nth-child(3) .work-meta{padding-top:16px;min-height:0}.work-meta h3,.work-card:nth-child(2) .work-meta h3{font-size:18px;white-space:normal}.work-meta p{font-size:13px}.replace-note{grid-column:auto;margin-top:0}}
+
+/* Uniform portfolio presentation: equal columns, equal media frames, fixed row pairing. */
+.work-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-flow:row;align-items:start}
+.portfolio-visual,.work-card-large .portfolio-visual,.work-card:not(.work-card-large) .portfolio-visual,.work-card:nth-child(3) .portfolio-visual,.work-card:nth-child(4) .portfolio-visual{aspect-ratio:1893 / 911}
+.portfolio-visual img{object-fit:contain;background:#08070b}
+.work-meta,.work-card:nth-child(2) .work-meta,.work-card:nth-child(3) .work-meta,.work-card:nth-child(4) .work-meta{min-height:0}
+.work-card:nth-child(3),.work-card:nth-child(4){grid-row:2}
+@media(max-width:767px){.work-grid{grid-template-columns:minmax(0,1fr)}.work-card:nth-child(3),.work-card:nth-child(4){grid-row:auto}}
