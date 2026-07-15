@@ -17,5 +17,8 @@
 .work-card:nth-child(3) .portfolio-visual{aspect-ratio:430 / 430}
 .work-card:nth-child(3) .work-meta{padding-top:16px}
 .replace-note{grid-column:1/-1;margin-top:44px}
+/* Keep the newest furniture project aligned opposite the auto-service project. */
+.work-card:nth-child(3){grid-column:2;grid-row:2}
+.work-card:nth-child(4){grid-column:1;grid-row:2;margin-top:0}
 @media(max-width:1199px){.work-grid{grid-template-columns:minmax(0,1.12fr) minmax(0,1fr);gap:22px}.work-meta h3{font-size:19px}.work-meta p{font-size:13px}}
-@media(max-width:767px){.work-grid{grid-template-columns:minmax(0,1fr);gap:42px;overflow:visible}.work-card:nth-child(3){grid-column:auto;margin-top:0}.portfolio-visual,.work-card-large .portfolio-visual,.work-card:not(.work-card-large) .portfolio-visual,.work-card:nth-child(3) .portfolio-visual{aspect-ratio:1893 / 911}.work-meta,.work-card:nth-child(2) .work-meta,.work-card:nth-child(3) .work-meta{padding-top:16px;min-height:0}.work-meta h3,.work-card:nth-child(2) .work-meta h3{font-size:18px;white-space:normal}.work-meta p{font-size:13px}.replace-note{grid-column:auto;margin-top:0}}
+@media(max-width:767px){.work-grid{grid-template-columns:minmax(0,1fr);gap:42px;overflow:visible}.work-card:nth-child(3),.work-card:nth-child(4){grid-column:auto;grid-row:auto;margin-top:0}.portfolio-visual,.work-card-large .portfolio-visual,.work-card:not(.work-card-large) .portfolio-visual,.work-card:nth-child(3) .portfolio-visual{aspect-ratio:1893 / 911}.work-meta,.work-card:nth-child(2) .work-meta,.work-card:nth-child(3) .work-meta{padding-top:16px;min-height:0}.work-meta h3,.work-card:nth-child(2) .work-meta h3{font-size:18px;white-space:normal}.work-meta p{font-size:13px}.replace-note{grid-column:auto;margin-top:0}}
